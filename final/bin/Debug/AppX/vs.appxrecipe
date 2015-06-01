@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>MANMAN</Machine>
+    <WindowsUser>mansoureh</WindowsUser>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>0068cac1-9a2b-4f8f-910e-b1e9c0122122</PackageIdentityName>
+    <IntermediateOutputPath>C:\Users\mansoureh\Source\Workspaces\Demo\SalesApp\final\obj\Debug\</IntermediateOutputPath>
+    <RegisteredManifestChecksum>5C89718C0A455C0BBB9179806864A37C54A466475EC1F7D8C55962DFA6C90399</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>0068cac1-9a2b-4f8f-910e-b1e9c0122122_1.0.0.0_neutral__w8bkwd1sg92h4</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>0068cac1-9a2b-4f8f-910e-b1e9c0122122_w8bkwd1sg92h4!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>0068cac1-9a2b-4f8f-910e-b1e9c0122122</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=mansoureh</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+    <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\mansoureh\Source\Workspaces\Demo\SalesApp\final\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-05-29T06:57:57.389</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\mansoureh\Source\Workspaces\Demo\SalesApp\final\bin\Debug\final.exe">
+      <PackagePath>final.exe</PackagePath>
+      <Modified>2015-05-29T06:57:57.080</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mansoureh\Source\Workspaces\Demo\SalesApp\packages\Newtonsoft.Json.6.0.8\lib\netcore45\Newtonsoft.Json.dll">
+      <PackagePath>Newtonsoft.Json.dll</PackagePath>
+      <Modified>2015-05-29T04:19:20.037</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mansoureh\Source\Workspaces\Demo\SalesApp\final\Assets\Logo.scale-100.png">
+      <PackagePath>Assets\Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-07-23T03:01:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mansoureh\Source\Workspaces\Demo\SalesApp\final\Assets\SmallLogo.scale-100.png">
+      <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-07-23T03:01:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mansoureh\Source\Workspaces\Demo\SalesApp\final\Assets\SplashScreen.scale-100.png">
+      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-07-23T03:01:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mansoureh\Source\Workspaces\Demo\SalesApp\final\Assets\StoreLogo.scale-100.png">
+      <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-07-23T03:01:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mansoureh\Source\Workspaces\Demo\SalesApp\final\img\arrow.png">
+      <PackagePath>img\arrow.png</PackagePath>
+      <Modified>2015-05-28T09:39:28.635</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mansoureh\Source\Workspaces\Demo\SalesApp\final\img\calculation.png">
+      <PackagePath>img\calculation.png</PackagePath>
+      <Modified>2015-05-28T16:55:30.433</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mansoureh\Source\Workspaces\Demo\SalesApp\final\img\contactme.png">
+      <PackagePath>img\contactme.png</PackagePath>
+      <Modified>2015-05-28T17:04:30.508</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mansoureh\Source\Workspaces\Demo\SalesApp\final\img\bonus.jpg">
+      <PackagePath>img\bonus.jpg</PackagePath>
+      <Modified>2015-05-28T17:12:25.479</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mansoureh\Source\Workspaces\Demo\SalesApp\final\img\contactus.jpg">
+      <PackagePath>img\contactus.jpg</PackagePath>
+      <Modified>2015-05-28T17:10:33.301</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mansoureh\Source\Workspaces\Demo\SalesApp\final\bin\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+      <Modified>2015-05-29T06:10:31.707</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mansoureh\Source\Workspaces\Demo\SalesApp\final\bin\Debug\MainPage.xbf">
+      <PackagePath>MainPage.xbf</PackagePath>
+      <Modified>2015-05-29T06:57:56.874</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mansoureh\Source\Workspaces\Demo\SalesApp\final\bin\Debug\final.xr.xml">
+      <PackagePath>final.xr.xml</PackagePath>
+      <Modified>2015-05-29T06:57:56.826</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mansoureh\Source\Workspaces\Demo\SalesApp\final\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2015-05-29T06:57:57.264</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

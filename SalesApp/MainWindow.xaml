@@ -1,0 +1,119 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+    xmlns:Behaviours="clr-namespace:MahApps.Metro.Behaviours;assembly=MahApps.Metro" xmlns:System="clr-namespace:System;assembly=mscorlib" xmlns:Custom="http://metro.mahapps.com/winfx/xaml/controls" x:Class="SalesApp.MainWindow"
+        Title="MainWindow"
+    xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro" Background="#FF0B2A4F" Foreground="#FF0B2A4F"
+         >
+
+
+    <TabControl x:Name="tab" HorizontalAlignment="Left"  Margin="29,19,0,0" VerticalAlignment="Top" Height="457" Width="719" Background="#FF0B2A4F" Foreground="#FF0B2A4F" SelectionChanged="tab_SelectionChanged">
+
+        <TabItem Header="Home" FontFamily="AR DELANEY">
+            <Grid Background="#FF63C15F">
+                <Button Content="HOME INSURANCE CALCULATOR" HorizontalAlignment="Left" Margin="216,60,0,0" VerticalAlignment="Top" Width="273" Height="45" Click="Button_Click_1"/>
+                <Button Content="I AM IN HURRY, CONTACT ME" HorizontalAlignment="Left" Margin="216,122,0,0" VerticalAlignment="Top" Width="273" Height="45" Click="Button_Click_2"/>
+                <Button Content="I AM YOUR CUSTOMER, GIVE ME BONUS" HorizontalAlignment="Left" Margin="216,187,0,0" VerticalAlignment="Top" Width="273" Height="45" Click="Button_Click_3"/>
+                <Button Content="CONTACT US" HorizontalAlignment="Left" Margin="216,254,0,0" VerticalAlignment="Top" Width="273" Height="45" Click="Button_Click_4"/>
+            </Grid>
+        </TabItem>
+        <TabItem Content=""></TabItem>
+        <TabItem Header="Calculator" FontFamily="AR DELANEY">
+            <Grid Background="#FF63C15F" RenderTransformOrigin="0.44,0.757" Margin="0,0,0,-35">
+                <ComboBox x:Name="homeType" HorizontalAlignment="Left" Margin="42,28,0,0" VerticalAlignment="Top" Width="201">
+                    <ComboBoxItem Content="Home Type" IsSelected="True" Visibility="Hidden"/>
+                    <ComboBoxItem Content="House"/>
+                    <ComboBoxItem Content="Apartment"/>
+                    <ComboBoxItem Content="Row House"/>
+                    <ComboBoxItem Content="Pair House"/>
+                    <ComboBoxItem Content="Summer House"/>
+                    <ComboBoxItem Content="Sauna"/>
+                </ComboBox>
+                <TextBox x:Name="postalCodeBox" HorizontalAlignment="Left" Height="23" Margin="42,71,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="201" Controls:TextBoxHelper.Watermark="Postal Code"/>
+                <TextBox x:Name="addressBox" HorizontalAlignment="Left" Height="23" Margin="42,112,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="201" Controls:TextBoxHelper.Watermark="Address"/>
+                <TextBox x:Name="AreaBox" HorizontalAlignment="Left" Height="23" Margin="42,153,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="201" Controls:TextBoxHelper.Watermark="Area"/>
+                <TextBox x:Name="yearBox" HorizontalAlignment="Left" Height="23" Margin="42,193,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="201" Controls:TextBoxHelper.Watermark="Build Year"/>
+                <TextBox x:Name="startDate" HorizontalAlignment="Left" Height="23" Margin="42,233,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="201" Controls:TextBoxHelper.Watermark="Insurance Start Date"/>
+                <ComboBox x:Name="billingBox" HorizontalAlignment="Left" Margin="42,277,0,0" VerticalAlignment="Top" Width="201">
+                    <ComboBoxItem Content="Billing Period" IsSelected="True" Visibility="Hidden"/>
+                    <ComboBoxItem Content="Month"/>
+                    <ComboBoxItem Content="Year"/>
+                    <ComboBoxItem Content="Quarter"/>
+                </ComboBox>
+                <ComboBox x:Name="currencyBox" HorizontalAlignment="Left" Margin="42,320,0,0" VerticalAlignment="Top" Width="201">
+                    <ComboBoxItem Content="Currency" IsSelected="True" Visibility="Hidden"/>
+                    <ComboBoxItem Content="USD"/>
+                    <ComboBoxItem Content="EUR"/>
+                </ComboBox>
+                <Button x:Name="calculateButton" Content="Calculate" HorizontalAlignment="Left" Margin="280,65,0,0" VerticalAlignment="Top" Width="105" Height="43" Click="Button_Click"/>
+                <Label Content="Your Result:" HorizontalAlignment="Left" Margin="503,65,0,0" VerticalAlignment="Top" Width="128" FontFamily="Century Schoolbook" FontSize="20"/>
+                <Label x:Name="txtresult" Content="" HorizontalAlignment="Left" Margin="495,104,0,0" VerticalAlignment="Top" Height="75" Width="136" FontFamily="Century Schoolbook" FontSize="20"/>
+                <Button Content="Home" HorizontalAlignment="Left" Margin="310,386,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_5"/>
+                <Image HorizontalAlignment="Left" Height="35" Margin="426,71,0,0" VerticalAlignment="Top" Width="49" Source="img/arrow.png"/>
+                <Button x:Name="btnorder" Content="Make an order" HorizontalAlignment="Left" Margin="508,179,0,0" VerticalAlignment="Top" Width="109" Click="Button_Click_10" Visibility="Hidden"/>
+                <Button x:Name="btncontact" Content="Contact Me" HorizontalAlignment="Left" Margin="508,209,0,0" VerticalAlignment="Top" Width="109" Click="Button_Click_9" Visibility="Hidden" />
+                <TextBox x:Name="txtname" HorizontalAlignment="Left" Height="23" Margin="503,250,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Controls:TextBoxHelper.Watermark="First Name" />
+                <TextBox x:Name="txtfamily" HorizontalAlignment="Left" Height="23" Margin="503,281,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Controls:TextBoxHelper.Watermark="Last Name"/>
+                <TextBox x:Name="txtvalid" HorizontalAlignment="Left" Height="23" Margin="503,312,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120" Controls:TextBoxHelper.Watermark="Valid To"/>
+                <Button x:Name="btnsubmit" Content="Submit" HorizontalAlignment="Left" Margin="567,346,0,0" VerticalAlignment="Top" Width="56" />
+                <Button x:Name="btnsave" Content="Save" HorizontalAlignment="Left" Margin="503,346,0,0" VerticalAlignment="Top" Width="59" />
+            </Grid>
+        </TabItem>
+        <TabItem Header=""></TabItem>
+        <TabItem Header="Contact Me" FontFamily="AR DELANEY">
+            <Grid Background="#FF63C15F" Margin="0,-2,0,2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0*"/>
+                    <ColumnDefinition Width="194*"/>
+                    <ColumnDefinition Width="136*"/>
+                    <ColumnDefinition Width="383*"/>
+                    <ColumnDefinition Width="0*"/>
+                </Grid.ColumnDefinitions>
+                <ComboBox Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="52,27,0,0" VerticalAlignment="Top" Width="192" Height="26" Grid.Column="2">
+                    <ComboBoxItem Content="I want..." IsSelected="True" Visibility="Hidden"/>
+                    <ComboBoxItem Content="Pet Insurance"/>
+                    <ComboBoxItem Content="House Insurance"/>
+                    <ComboBoxItem Content="Car Insurance"/>
+                    <ComboBoxItem Content="Health Insurance"/>
+                    <ComboBoxItem Content="Travel Insurance"/>
+                </ComboBox>
+                <TextBox Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="26" Margin="52,71,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="192" Controls:TextBoxHelper.Watermark="Your Name" Grid.Column="2"/>
+                <ComboBox Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="51,113,0,0" VerticalAlignment="Top" Width="192" Height="26" Grid.Column="2">
+                    <ComboBoxItem Content="Contact Language" IsSelected="True" Visibility="Hidden"/>
+                    <ComboBoxItem Content="English"/>
+                    <ComboBoxItem Content="Suomi"/>
+                </ComboBox>
+                <TextBox Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="26" Margin="50,155,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="192" Controls:TextBoxHelper.Watermark="Email Address" Grid.Column="2"/>
+                <TextBox Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="26" Margin="50,200,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="192" Controls:TextBoxHelper.Watermark="Phone Number" Grid.Column="2"/>
+                <Button Content="Send" HorizontalAlignment="Left" Margin="94,256,0,0" VerticalAlignment="Top" Width="75" Height="25" Grid.Column="2" Grid.ColumnSpan="2"/>
+                <Button Content="Home" HorizontalAlignment="Left" Margin="116,386,0,0" VerticalAlignment="Top" Width="75" Grid.ColumnSpan="2" Click="Button_Click_7" Height="25" Grid.Column="2"/>
+
+            </Grid>
+        </TabItem>
+        <TabItem Header=""></TabItem>
+        <TabItem Header="Bonus" FontFamily="AR DELANEY">
+            <Grid Background="#FF63C15F">
+                <TextBox HorizontalAlignment="Left" Height="23" Margin="219,27,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="192" Controls:TextBoxHelper.Watermark="Customet No."/>
+                <TextBox HorizontalAlignment="Left" Height="23" Margin="219,68,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="192" Controls:TextBoxHelper.Watermark="Your Name"/>
+                <TextBox HorizontalAlignment="Left" Height="23" Margin="219,110,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="192" Controls:TextBoxHelper.Watermark="Phone Number"/>
+                <Button Content="SEND REQUEST" HorizontalAlignment="Left" Margin="269,155,0,0" VerticalAlignment="Top" Width="94" Height="30"/>
+                <Button Content="Home" HorizontalAlignment="Left" Margin="310,386,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_6"/>
+            </Grid>
+        </TabItem>
+        <TabItem Header=""></TabItem>
+        <TabItem Header="Contact Us" FontFamily="AR DELANEY">
+            <Grid Background="#FF63C15F">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="15*"/>
+                    <ColumnDefinition Width="8*"/>
+                </Grid.ColumnDefinitions>
+                <Image HorizontalAlignment="Left" Height="87" Margin="241,24,0,0" VerticalAlignment="Top" Width="257" Source="img/logo otso.PNG" Grid.ColumnSpan="2"/>
+                <Button Content="Home" HorizontalAlignment="Left" Margin="310,386,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_8"/>
+                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="241,116,0,0" Height="100" Width="309" Grid.ColumnSpan="2" Foreground="White"><Run Text="LTC-Otso"/><LineBreak/><Run Text="Revontulentie 7, 02100 Espoo"/><LineBreak/><Run Text="puh. 0400 511 398"/><LineBreak/><Run Text="peter.tornroos@cgi.com | www.fi.cgi.com"/><LineBreak/><Run Text="LTC-Otso Oy, y-tunnus 2523834-9"/></TextBlock>
+            </Grid>
+        </TabItem>
+
+    </TabControl>
+
+</Window>
